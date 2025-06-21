@@ -8,7 +8,7 @@ body {
 .title {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: baseline;
     padding: 0 5em;
     background-color: #303030;
     color: white;
@@ -20,6 +20,7 @@ body {
     height: 10px;
     background-color: rgb(255, 255, 255);
     flex: 3;
+    box-shadow: 1px 1px 1px 0px rgba(255, 255, 255, 0.66);
 
 }
 
@@ -28,6 +29,7 @@ body {
     text-align: center;
     font-size: 3rem;
     padding: 0.5em;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
 }
 
 main {
@@ -47,8 +49,18 @@ main {
       rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     padding: 2em;
     background-color: rgb(255, 255, 255);
-    border: 5px solid #000000;
-    border-radius: 40px 0px 40px 0px;
+    border-radius: 40px 40px 40px 40px;
+}
+
+.quote-box {
+    width: 90%;
+    height: 300px;
+    margin: 0 auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: hsl(0, 0%, 30%);
 }
 
 p {
@@ -60,12 +72,53 @@ p {
 .quote-text {
     font-size: 2rem;
     font-style: italic;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.138);
 }
 
 .quote-author {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
+.btn-container {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+    border-top: 1px solid black;
+    padding-top: 3em;
+}
+
+.btn-container > button:nth-child(2) {
+    margin-left: auto;
+    padding-right: 1em;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+button:hover {
+    opacity: 1;
+}
+
+img {
+    width: 30px;
+    height: 30px;
+}
+
+#copy {
+    position: absolute;
+    top: 75%;
+    left: 68%;
+    opacity: 0;
+    transition: opacity ease-in-out;
+}
+
+#copy.show {
+    opacity: 1;
+}
 
 footer {
     width: 100%;
@@ -77,4 +130,6 @@ footer {
     font-weight: bold;
     text-align: center;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.66);
+
 }
