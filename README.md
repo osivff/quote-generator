@@ -1,6 +1,6 @@
 # 📜 Quote Generator
 
-A simple, clean, and responsive quote generator built with HTML, CSS, and JavaScript. This web app displays random inspirational quotes with the click of a button. It also includes a convenient "Tweet" feature so users can share quotes directly on Twitter.
+A simple and clean quote generator built with HTML, CSS, and JavaScript. This web app displays random inspirational quotes with the click of a button.
 
 🔗 **Live Demo:** [https://osivff.github.io/quote-generator/](https://osivff.github.io/quote-generator/)
 
